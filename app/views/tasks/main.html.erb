@@ -1,0 +1,15 @@
+
+<!-- 
+<div id = "generator_layout">
+
+	 <%= form_for(:task, :url => {:action => 'show_random_task'}) do |f| %>
+	 <% end %>
+	 <%= button_to("Randomize someting to do!", {:action => "show_random_task"}) %>
+
+</div> -->
+<div id='random_area'>
+
+<%= link_to 'gen task', :action => :show, :id =>'random' %>
+<%= link_to 'random task', task_path(:random) %>
+
+</div>

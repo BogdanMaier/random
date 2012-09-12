@@ -1,0 +1,14 @@
+<h1>Generated task</h1>
+	<% random_task %>
+   <%= form_for (:task, :url => {:action =>'show_random_task'}) do |f|%>
+
+    <p><%= render(:partial => "show_rand_task_form", :locals => {:f => f}) %></p> 
+    <%end%>
+</div>
+
+
+<!-- </div>
+<%= render :partial =>'show_generate_task' %> -->
+
+<%= link_to 'Show', @task %> |
+<%= link_to 'Back', tasks_path %>

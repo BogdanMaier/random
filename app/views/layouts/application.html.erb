@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bored</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <div id = "header_bar">
+  	<table = "header_bar">
+  		<td> login</td>
+  		<td> stats</td>
+  		<td> contact</td>
+  </table>
+  </div>
+  <h1>Warzaru.1.ai</h1>
+  <h2>You will find allways something to do here</h2>
+
+</head>
+<body>
+
+  <%= yield %>
+  <div id = 'site_footer'>
+    <%= link_to 'Home', '#main'%> |
+  </div>
+</body>
+</html>
