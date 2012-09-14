@@ -1,0 +1,16 @@
+I dare you... to
+<p>
+<%= form_for(@task= Task.order('RANDOM()').first) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :disabled=>true %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category, :disabled=>true %>
+  </div>
+  <div class="actions">
+    <%= f.submit "generate"%>
+  </div>
+<% end %>
+</p>

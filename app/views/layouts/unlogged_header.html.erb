@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bored</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
   <div id = 'header'>
     <div id = "header_bar_1">
         <table = "header_bar">
@@ -29,20 +20,3 @@
       </table>
     </div>
   </div>
-
-  <h1>Warzaru.1.ai</h1>
-  <h2>You will find allways something to do here</h2>
-
-    <%= yield %>
-  
-</body>
-<div id = 'footer'>
-      <%= link_to 'Home', 'tasks#main'%>
-      <%= link_to 'Auth', 'tasks#main'%>
-      <%= link_to 'Home', 'tasks#main'%>
-      <%= link_to 'Contact', 'tasks#main'%>
-      <br>
-      Copyright @ Bogdan Maier
-    </div>
-</body>
-</html>

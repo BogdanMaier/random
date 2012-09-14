@@ -1,15 +1,8 @@
+<p> Main </p>
 
-<!-- 
-<div id = "generator_layout">
-
-	 <%= form_for(:task, :url => {:action => 'show_random_task'}) do |f| %>
-	 <% end %>
-	 <%= button_to("Randomize someting to do!", {:action => "show_random_task"}) %>
-
-</div> -->
-<div id='random_area'>
+<%= form_for(:task, :action =>'rand_task') do |f|%>
+  <%= render(:partial => "rand_task", :locals => {:f => f}) %>
+<% end %>
 
 <%= link_to 'gen task', :action => :show, :id =>'random' %>
 <%= link_to 'random task', task_path(:random) %>
-
-</div>

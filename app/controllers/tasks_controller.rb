@@ -3,7 +3,7 @@ class TasksController < ApplicationController
   # GET /tasks.json
   def index
     @tasks = Task.all
-
+    @task = Task.order('RANDOM()').first
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @tasks }
@@ -14,8 +14,8 @@ class TasksController < ApplicationController
   # GET /tasks/1.json
   def show
     if params[:id] == 'random'
-      task = Task.order('RANDOM()').first
-      redirect_to task
+      @task = Task.order('RANDOM()').first
+      redirect_to @task
     else
       @task = Task.find(params[:id])
     end
@@ -92,7 +92,6 @@ class TasksController < ApplicationController
     #return whitout render anything
     respond_to do |format|
       format.html { redirect_to tasks_url }
-      format.json { head :no_content }
     end
   end
 
@@ -107,23 +106,24 @@ class TasksController < ApplicationController
     end
   end
 
-  def show_random_task
-    @task = Task.find(params[:task])
-  end 
-
   def random_task
     begin
-      @task.id = nil
       @task = Task.find(rand(Task.first.id..Task.last.id)) rescue "Item couldn't been randomized!"
 
     end
     respond_to do |format|
-      format.html {redirect_to show_rand_task }
+      format.html {redirect_to rand_task }
       format.json { rende :no_content }
     end
   end
 
-
+  def rand_task
+    @task = Task.new
+    @task = Task.order('RANDOM()').first
+    respond_to do |format|
+      format.html { render :partial => "rand_task" }
+    end
+  end
 end
     
     

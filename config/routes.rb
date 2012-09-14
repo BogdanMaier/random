@@ -1,9 +1,8 @@
 Bored::Application.routes.draw do
   root :to => 'tasks#main'
-
   resources :tasks
-
   match ':controller(/:action(/:id))(.:format)'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
