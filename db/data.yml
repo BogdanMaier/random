@@ -1,7 +1,7 @@
 
----
-tasks:
-  columns:
+--- 
+tasks: 
+  columns: 
   - id
   - name
   - category
@@ -9,45 +9,15 @@ tasks:
   - created_at
   - updated_at
   records: 
-  - - 2
-    - Go for a walk around the block / house
-    - outdoor
-    - 0
-    - '2012-09-06 15:52:17.138657'
-    - '2012-09-06 15:52:17.138657'
-  - - 3
-    - Go home!
-    - outdoor
-    - 0
-    - '2012-09-06 15:59:33.350284'
-    - '2012-09-06 15:59:33.350284'
-  - - 4
-      - Go away from home!
-      - outdoor
-      - -10
-      - '2012-09-06 15:59:33.350284'
-      - '2012-09-06 15:59:33.350284'
-  - - 5
-      - Take a walk into the park with the first person up for it!
-      - outdoor
-      - -10
-      - '2012-09-06 15:59:33.350284'
-      - '2012-09-06 15:59:33.350284'
-  - - 6
-      - Read the first 3 pages from the the 5-th book on the first book shelf
-      - cognitive
-      - 0
-      - '2012-09-06 15:59:33.350284'
-      - '2012-09-06 15:59:33.350284'
-  - - 7
-      - Browse the first 2 pages on www.9gag.com
-      - funny
-      - 0
-      - '2012-09-06 15:59:33.350284'
-      - '2012-09-06 15:59:33.350284'
-  - - 8
-      - Enter www.youtube.com and watch the first 2 clips under 'prank' search
-      - outdoor
-      - 0
-      - '2012-09-06 15:59:33.350284'
-      - '2012-09-06 15:59:33.350284'
+  - - "1"
+    - futai
+    - indoor
+    - 
+    - 2012-09-15 11:19:21.252281
+    - 2012-09-15 11:20:23.209275
+  - - "2"
+    - dormi
+    - indoor
+    - 
+    - 2012-09-15 11:27:20.131381
+    - 2012-09-15 11:27:20.131381
