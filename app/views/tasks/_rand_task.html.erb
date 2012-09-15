@@ -1,13 +1,14 @@
 I dare you... to
 <p>
 <%= form_for(@task= Task.order('RANDOM()').first) do |f| %>
-  <div class="field">
+<div id = "rand_form">
+  <div id="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name, :disabled=>true %>
+    <%= f.text_area(:name, :size => "20x3", :disabled => true)%>
   </div>
-  <div class="field">
+  <div id="field">
     <%= f.label :category %><br />
-    <%= f.text_field :category, :disabled=>true %>
+    <%= f.text_field :category, :size => 20, :disabled=>true %>
   </div>
   <div class="actions">
     <%= f.submit "generate"%>

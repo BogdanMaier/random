@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :category %><br />
-    <%= f.select(:category, Task::CATEGORY) %>
+    <%= f.select(:category, Task::CATEGORY,:multiple => true) %>
   </div>
   <div class="field">
     <%= f.label :points %><br />

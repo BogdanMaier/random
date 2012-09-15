@@ -11,10 +11,7 @@
  *= require_self
  *= require_tree .
 */
-/*#header{
-	width: 100%;
-	overflow: hidden;
-}*/
+
 #header{
 	border:1px;
 	border-style: dotted; 
@@ -47,13 +44,21 @@
    height:30px;   /* Height of the footer */
    background:#556876;
    margin-left: -5px;
+   padding: 5px;
 }
+
+
+#rand_form{
+  color:#0B2232;
+}
+
 
 body{
   background-color: #E7F6FD;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 11px;
+   padding: 5px;
 }
 
 ???? {
@@ -88,7 +93,7 @@ a {
 
 div {
   &.field, &.actions {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
