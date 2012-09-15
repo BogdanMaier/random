@@ -45,6 +45,17 @@
    background:#556876;
    margin-left: -5px;
    padding: 5px;
+   color:#E7F6FD;
+   a {
+  color: #7BBEAC;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #7BBEAC;
+    background-color: #7BBEAC;
+  }
+}
 }
 
 
